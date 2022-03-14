@@ -15,11 +15,11 @@ function Router() {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path='/' element={<Main />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/library' element={<Library />} />
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/product' element={<Product />} />
+        <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
       <Footer />
     </BrowserRouter>
