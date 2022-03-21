@@ -3,6 +3,10 @@ import reset from 'styled-reset';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  
+  body {
+    font-family: sans-serif;
+  }
 	
 	* {
     box-sizing: border-box;
