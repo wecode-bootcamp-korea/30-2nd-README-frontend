@@ -1,34 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
-import NotoSansKRBlack from './NotoSansKR-Black.woff';
-import NotoSansKRBold from './NotoSansKR-Bold.woff';
-import NotoSansKRLight from './NotoSansKR-Light.woff';
-import NotoSansKRMedium from './NotoSansKR-Medium.woff';
-import NotoSansKRRegular from './NotoSansKR-Regular.woff';
-import NotoSansKRThin from './NotoSansKR-Thin.woff';
+import NanumGothicBold from './NanumGothic-Bold.ttf';
+import NanumGothicExtraBold from './NanumGothic-ExtraBold.ttf';
+import NanumGothicRegular from './NanumGothic-Regular.ttf';
 
 export default createGlobalStyle`
     @font-face {
-        font-family: 'Noto Sans KR Black';
-        src: url(${NotoSansKRBlack}) format('woff');
+        font-family: 'Nanum GothicBold';
+        src: url(${NanumGothicBold}) format('truetype');
     }
     @font-face {
-        font-family: 'Noto Sans KR Bold';
-        src: url(${NotoSansKRBold}) format('woff');
+        font-family: 'Nanum Gothic ExtraBold';
+        src: url(${NanumGothicExtraBold}) format('truetype');
     }
     @font-face {
-        font-family: 'Noto Sans KR Light';
-        src: url(${NotoSansKRLight}) format('woff');
-    }
-    @font-face {
-        font-family: 'Noto Sans KR Medium';
-        src: url(${NotoSansKRMedium}) format('woff');
-    }
-    @font-face {
-        font-family: 'Noto Sans KR Regular';
-        src: url(${NotoSansKRRegular}) format('woff');
-    }
-    @font-face {
-        font-family: 'Noto Sans KR Thin';
-        src: url(${NotoSansKRThin}) format('woff');
+        font-family: 'Nanum Gothic Regular';
+        src: url(${NanumGothicRegular}) format('truetype');
     }
 `;
