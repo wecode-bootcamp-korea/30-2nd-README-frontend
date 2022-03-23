@@ -87,7 +87,8 @@ const NavContent = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   width: 1150px;
   background-color: white;
 `;
@@ -95,7 +96,6 @@ const NavContent = styled.div`
 const LogoImg = styled.img`
   object-fit: cover;
   height: 27px;
-  padding-left: 10px;
 `;
 
 const SearchWrap = styled.div`
