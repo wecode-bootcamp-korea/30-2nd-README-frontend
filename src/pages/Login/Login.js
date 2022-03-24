@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { API } from '../../config';
 const { Kakao } = window;
 
 function Login() {
@@ -16,7 +17,7 @@ function Login() {
           url: '/v2/user/me',
           success: res => {
             const kakao_account = res.kakao_account;
-            fetch('http://10.58.7.123:8000/users/signin', {
+            fetch(`${API.LOGIN}`, {
               method: 'GET',
               headers: {
                 Authorization: authObj.access_token,

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import SeriesData from './SeriesData';
 import UserComment from './UserComment';
+import { API } from '../../config';
 
 function Product() {
   const [productData, setProductData] = useState([]);
@@ -26,14 +27,14 @@ function Product() {
   // const commentDate = '2020.02.01';
 
   useEffect(() => {
-    fetch(`http://10.58.7.123:8000/products/details/${params.id}`)
+    fetch(`${API.PRODUCT_DETAIL}${params.id}`)
       .then(res => res.json())
       .then(data => setProductData(data.result));
   }, []);
 
   useEffect(() => {
     fetch(
-      `http://10.58.7.123:8000/products/books/${params.id}${
+      `${API.PRODUCT_BOOK}${params.id}${
         location.search || `?limit=10&offset=0`
       }`
     )
@@ -85,7 +86,7 @@ function Product() {
       navigate('/login');
       return;
     }
-    fetch(`http://10.58.7.123:8000/reviews/${params.id}`, {
+    fetch(`${API.PRODUCT_DETAIL}${params.id}`, {
       method: 'POST',
       headers: {
         Authorization: access_token,
@@ -111,7 +112,7 @@ function Product() {
       navigate('/login');
       return;
     }
-    fetch(`http://10.58.7.123:8000/reviews/${params.id}`, {
+    fetch(`${API.PRODUCT_DETAIL}${params.id}`, {
       method: 'GET',
       headers: {
         Authorization: access_token,
@@ -137,7 +138,7 @@ function Product() {
       navigate('/login');
       return;
     }
-    fetch(`http://10.58.7.123:8000/carts`, {
+    fetch(`${API.CART}`, {
       method: 'POST',
       headers: {
         Authorization: access_token,
