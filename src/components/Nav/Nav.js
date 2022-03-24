@@ -6,6 +6,7 @@ const Nav = () => {
   const navigate = useNavigate();
   const AccessToken = localStorage.getItem('token');
   const BtnName = !AccessToken ? '로그인' : '로그아웃';
+  console.log('AccessToken', AccessToken);
 
   const goToCart = () => {
     navigate('/cart');
@@ -17,7 +18,7 @@ const Nav = () => {
     } else {
       localStorage.removeItem('token');
       alert('로그아웃 되었습니다');
-      navigate('/main');
+      navigate('/');
     }
   };
 
