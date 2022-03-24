@@ -29,8 +29,7 @@ const FooterWrap = styled.div`
   display: flex;
   justify-content: center;
   border-top: 2px solid #f0f0f0;
-  background-color: honeydew;
-  padding: 40px 45px;
+  padding: 40px 44px;
   bottom: 0;
 `;
 
