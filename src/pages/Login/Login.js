@@ -16,27 +16,27 @@ function Login() {
           url: '/v2/user/me',
           success: res => {
             const kakao_account = res.kakao_account;
+            fetch('http://10.58.7.123:8000/users/signin', {
+              method: 'GET',
+              headers: {
+                Authorization: authObj.access_token,
+              },
+            })
+              .then(res => res.json())
+              .then(data => {
+                if (data) {
+                  try {
+                    localStorage.setItem('token', data.access_token);
+                    navigate('/');
+                  } catch (err) {
+                    alert(err);
+                  }
+                } else {
+                  alert('로그인 실패');
+                }
+              });
           },
         });
-        fetch('http://12.34.5.678:8000/users/signin', {
-          method: 'GET',
-          headers: {
-            Authorization: authObj.access_token,
-          },
-        })
-          .then(res => res.json())
-          .then(data => {
-            if (data) {
-              try {
-                sessionStorage.setItem('token', data.token);
-              } catch (err) {
-                alert(err);
-              }
-            } else {
-              alert('로그인 실패');
-            }
-          });
-        navigate('/');
       },
     });
   };
