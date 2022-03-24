@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CartCheckInput from './CartCheckInput';
+import { API } from '../../config';
 
 function Cart() {
   const [optionalList, setOptionalList] = useState([]);
@@ -9,21 +10,14 @@ function Cart() {
   const [isAllChecked, setIsAllChecked] = useState(false);
   const arr = Array.from(checkedItems);
   const navigate = useNavigate();
-  const token = localStorage.getItem('token');
+  const access_token = localStorage.getItem('token');
   let count = 0;
 
-  // useEffect(() => {
-  //   fetch('/data/cartData.json')
-  //     .then(res => res.json())
-  //     .then(data => setOptionalList(data));
-  // }, []);
-
   useEffect(() => {
-    fetch(`http://10.58.3.144:8000/carts`, {
+    fetch(`${API.CART}`, {
       method: 'GET',
       headers: {
-        Authorization:
-          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjE2MjQwNTU5M30.iOn272oLVr6eeKuqPhuEXArzkSFtBRaXVHxZv8Zud6g',
+        Authorization: access_token,
       },
     })
       .then(res => res.json())
@@ -58,20 +52,18 @@ function Cart() {
   }
 
   const goToPurchase = () => {
-    if (!token) {
+    if (!access_token) {
       alert('로그인이 필요합니다.');
       navigate('/login');
       return;
     }
-    fetch(`http://10.58.3.144:8000/orders`, {
+    fetch(`${API.ORDER}`, {
       method: 'POST',
       headers: {
-        Authorization:
-          'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjE2MjQwNTU5M30.iOn272oLVr6eeKuqPhuEXArzkSFtBRaXVHxZv8Zud6g',
+        Authorization: access_token,
       },
       body: JSON.stringify({
         product_id: optionalList[0].product_id,
-        // product_id: 1,
         series_ids: arr,
         // return 문 밖은 그냥 자바스크립트 문법. 변수만 쓸때는 ${}쓸 필요가 없음. 변수와 다른 형식을 붙일 때 ``과 ${} 활용
         // return 문 안은 JSX문법. 문자 이외에는 {}안에 넣어주면 됨 .굳이 변수에 {}붙여주거나 {}안에 내용과 문자 붙여줄 때 ``사용할 필요 없음.
@@ -82,7 +74,7 @@ function Cart() {
         if (result.message === 'CREATE_ORDER') {
           window.confirm(
             '상품을 결제했습니다. 결제 페이지로 이동하시겠습니까?'
-          ) && navigate('/purchase');
+          ) && navigate('/');
         } else {
           alert('다시 시도해주세요!');
         }
