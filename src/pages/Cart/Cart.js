@@ -72,9 +72,7 @@ function Cart() {
       .then(response => response.json())
       .then(result => {
         if (result.message === 'CREATE_ORDER') {
-          window.confirm(
-            '상품을 결제했습니다. 결제 페이지로 이동하시겠습니까?'
-          ) && navigate('/');
+          window.confirm('결제가 완료되었습니다.');
         } else {
           alert('다시 시도해주세요!');
         }
