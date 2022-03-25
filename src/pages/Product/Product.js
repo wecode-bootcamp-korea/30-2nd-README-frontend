@@ -86,7 +86,7 @@ function Product() {
       navigate('/login');
       return;
     }
-    fetch(`${API.PRODUCT_DETAIL}${params.id}`, {
+    fetch(`${API.REVIEW}${params.id}`, {
       method: 'POST',
       headers: {
         Authorization: access_token,
@@ -97,8 +97,8 @@ function Product() {
       }),
     })
       .then(response => response.json())
-      .then(result => {
-        if (result.message === 'SUCCESS') {
+      .then(results => {
+        if (results.message === 'SUCCESS') {
           addComment();
         } else {
           alert('다시 시도해주세요!');
@@ -112,7 +112,7 @@ function Product() {
       navigate('/login');
       return;
     }
-    fetch(`${API.PRODUCT_DETAIL}${params.id}`, {
+    fetch(`${API.REVIEW}${params.id}`, {
       method: 'GET',
       headers: {
         Authorization: access_token,
@@ -120,6 +120,7 @@ function Product() {
     })
       .then(response => response.json())
       .then(result => {
+        // console.log(result);
         setAddCommentList([
           ...addCommentList,
           {
