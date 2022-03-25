@@ -7,7 +7,7 @@
 2022.03.14.월 ~ 2022.03.25.금
 
 ## 프로젝트 참여 인원
-프론트 엔드 : <a href="https://velog.io/@junzerokim">김준영</a>, 이희수, <a href="https://velog.io/@dudgus1670">한영현</a>
+프론트 엔드 : <a href="https://velog.io/@junzerokim">김준영</a>, 이희수, <a href="https://velog.io/@dudgus1670">한영현</a><br>
 백엔드 : 김지성, 김광일, 임정찬
 
 ## 필수 구현 사항
