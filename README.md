@@ -15,7 +15,7 @@
 2. 메인페이지 
 - 슬라이드, 전체 카테고리 보기(별도의 페이지로 분리하지 않음)
 - 상품 리스트 - 체크박스, 필터링, 페이지네이션 (메인페이지와 합치는 것을 고려)
-3. 도서 상세페이지 - 더보기(페이지네이션), 리뷰, 
+3. 도서 상세페이지 - 더보기(페이지네이션), 리뷰
 4. 장바구니 - 체크박스
 
 ## 구현 파트
@@ -33,21 +33,34 @@
 7. 도서 미리보기(파일을 주고 받기)
 8. 상세 페이지 - 정렬, 전권 구매, 선택 구매, 구매시 [구매버튼]이 [보기버튼]으로 바뀜
 9. 구매 페이지
+10. 배포
 
 ## 데모 사진
 ### 로그인/회원가입
 - 카카오 소셜 로그인 구현
 - 로그인 시 토큰 값 localStorage에 저장
 <img width="578" alt="Screen Shot 2022-03-26 at 4 08 31 PM" src="https://user-images.githubusercontent.com/88773996/160228985-4ac2cb77-6772-46c1-9f02-b8f787aa042a.png">
-<img width="729" alt="Screen Shot 2022-03-26 at 4 09 02 PM" src="https://user-images.githubusercontent.com/88773996/160229002-b8b0b9bb-efb1-48c3-8d5e-9c9d652e761f.png">
-
-
+<img width="527" alt="Screen Shot 2022-03-26 at 4 10 25 PM" src="https://user-images.githubusercontent.com/88773996/160229036-d723cdca-bc42-4778-b91d-5030edb9faf8.png">
 
 ### 메인
+- 카테고리별( 판타지, 로맨스 등 ) 필터링 기능 구현
+- 페이지네이션을 이용해 상세페이지 이동 기능 구현
+<img width="945" alt="Screen Shot 2022-03-26 at 4 11 56 PM" src="https://user-images.githubusercontent.com/88773996/160229090-55d32e3c-de99-4659-9e7a-eb91ace6671a.png">
+
+
 
 ### 상세
+- 체크박스 기능 구현
+- 더보기 기능 구현 ( 페이지 네이션 활용 )
+- 리뷰 기능 구현 ( 토큰을 활용해 댓글 버튼 입력 시 백 엔드로 데이터 저장 및 불러오는 로직 구현 )
+<img width="707" alt="Screen Shot 2022-03-26 at 4 12 35 PM" src="https://user-images.githubusercontent.com/88773996/160229105-cb30752a-4034-467b-b16e-0a5587606781.png">
+<img width="753" alt="Screen Shot 2022-03-26 at 4 13 52 PM" src="https://user-images.githubusercontent.com/88773996/160229145-5fd82ea9-2a75-4d15-8c1a-d1e313e352d4.png">
+
 
 ### 장바구니
+- 체크 박스 기능 구현
+- set객체에 있는 값들을 Array.from메서드를 활용해 배열로 변환해 백 엔드로 전송함.
+<img width="889" alt="Screen Shot 2022-03-26 at 4 20 34 PM" src="https://user-images.githubusercontent.com/88773996/160229341-5cb77427-013b-4f0a-a234-a77877f323d1.png">
 
 
 ## 적용 기술
