@@ -39,7 +39,7 @@
 ### 로그인/회원가입
 - 카카오 소셜 로그인 구현
 - 로그인 시 토큰 값 localStorage에 저장
-<img src="https://user-images.githubusercontent.com/96604554/160229945-086f2ad6-4a24-46f4-9d78-ef7b64620e21.gif" width="350" />
+<img src="https://user-images.githubusercontent.com/96604554/160229945-086f2ad6-4a24-46f4-9d78-ef7b64620e21.gif" width="1100" />
 
 
 ### 메인
