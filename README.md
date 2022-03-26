@@ -39,33 +39,33 @@
 ### 로그인/회원가입
 - 카카오 소셜 로그인 구현
 - 로그인 시 토큰 값 localStorage에 저장
-<img src="https://user-images.githubusercontent.com/96604554/160229945-086f2ad6-4a24-46f4-9d78-ef7b64620e21.gif" width="945" />
+<img src="https://user-images.githubusercontent.com/96604554/160229945-086f2ad6-4a24-46f4-9d78-ef7b64620e21.gif" width="600" />
 
 
 ### 메인
 - slick slider 라이브러리를 사용해 캐러셀 구현
-<img src="https://user-images.githubusercontent.com/96604554/160230186-d4b889b0-1a09-4273-9f77-a5e834063db5.gif" width="945" />
+<img src="https://user-images.githubusercontent.com/96604554/160230186-d4b889b0-1a09-4273-9f77-a5e834063db5.gif" width="600" />
 
 - querystring 을 이용해 카테고리별( 판타지, 로맨스 등 ) 필터링 기능 구현
-<img src="https://user-images.githubusercontent.com/96604554/160230416-43cfe543-00a5-432e-b3fd-0dec41711bb8.gif" width="945" />
+<img src="https://user-images.githubusercontent.com/96604554/160230416-43cfe543-00a5-432e-b3fd-0dec41711bb8.gif" width="600" />
 
 - path parameter 를 통해 상세페이지 이동 기능 구현
 
 ### 상세
 - 체크박스 기능 구현 ( props, state, set객체 활용 )
-<img src="https://user-images.githubusercontent.com/96604554/160230525-a2c6e7ff-09b2-445c-91e7-1afe79bcaae6.gif" width="945" />
+<img src="https://user-images.githubusercontent.com/96604554/160230525-a2c6e7ff-09b2-445c-91e7-1afe79bcaae6.gif" width="600" />
 
 - 더보기 기능 구현 ( 페이지 네이션 활용 )
-<img src="https://user-images.githubusercontent.com/96604554/160230527-59a0af4c-1fa6-4c1d-b733-e3986fed5501.gif" width="945" />
+<img src="https://user-images.githubusercontent.com/96604554/160230527-59a0af4c-1fa6-4c1d-b733-e3986fed5501.gif" width="600" />
 
 - 리뷰 기능 구현 ( 토큰을 활용해 댓글 버튼 입력 시 백 엔드로 데이터 저장 및 불러오는 로직 구현 )
-<img src="https://user-images.githubusercontent.com/96604554/160230531-7e2162f4-8364-42fc-8cd1-290ae5399270.gif" width="945" />
+<img src="https://user-images.githubusercontent.com/96604554/160230531-7e2162f4-8364-42fc-8cd1-290ae5399270.gif" width="600" />
 
 
 ### 장바구니
 - 체크 박스 기능 구현 ( props, state, set객체 활용 )
 - set객체에 있는 값들을 Array.from메서드를 활용해 배열로 변환해 백 엔드로 전송함.
-<img src="https://user-images.githubusercontent.com/96604554/160230537-0ecf37e5-09a1-4e87-b1c8-d046d4080dfd.gif" width="945" />
+<img src="https://user-images.githubusercontent.com/96604554/160230537-0ecf37e5-09a1-4e87-b1c8-d046d4080dfd.gif" width="600" />
 
 
 ## 적용 기술
