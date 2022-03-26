@@ -20,7 +20,7 @@
 
 ## 구현 파트
 1. 김준영 : Login/SignUp
-2. 이희수 : Main
+2. 이희수 : Nav/Footer/Main
 3. 한영현 : Detail/Cart
 
 ## 추가 구현 사항
@@ -39,26 +39,33 @@
 ### 로그인/회원가입
 - 카카오 소셜 로그인 구현
 - 로그인 시 토큰 값 localStorage에 저장
-<img src="https://user-images.githubusercontent.com/96604554/160229945-086f2ad6-4a24-46f4-9d78-ef7b64620e21.gif" width="1100" />
+<img src="https://user-images.githubusercontent.com/96604554/160229945-086f2ad6-4a24-46f4-9d78-ef7b64620e21.gif" width="945" />
 
 
 ### 메인
-- 카테고리별( 판타지, 로맨스 등 ) 필터링 기능 구현
-- 페이지네이션을 이용해 상세페이지 이동 기능 구현
-<img width="945" alt="Screen Shot 2022-03-26 at 4 11 56 PM" src="https://user-images.githubusercontent.com/88773996/160229090-55d32e3c-de99-4659-9e7a-eb91ace6671a.png">
+- slick slider 라이브러리를 사용해 캐러셀 구현
+<img src="https://user-images.githubusercontent.com/96604554/160230186-d4b889b0-1a09-4273-9f77-a5e834063db5.gif" width="945" />
+
+- querystring 을 이용해 카테고리별( 판타지, 로맨스 등 ) 필터링 기능 구현
+<img src="https://user-images.githubusercontent.com/96604554/160230416-43cfe543-00a5-432e-b3fd-0dec41711bb8.gif" width="945" />
+
+- path parameter 를 통해 상세페이지 이동 기능 구현
 
 ### 상세
 - 체크박스 기능 구현 ( props, state, set객체 활용 )
+<img src="https://user-images.githubusercontent.com/96604554/160230525-a2c6e7ff-09b2-445c-91e7-1afe79bcaae6.gif" width="945" />
+
 - 더보기 기능 구현 ( 페이지 네이션 활용 )
+<img src="https://user-images.githubusercontent.com/96604554/160230527-59a0af4c-1fa6-4c1d-b733-e3986fed5501.gif" width="945" />
+
 - 리뷰 기능 구현 ( 토큰을 활용해 댓글 버튼 입력 시 백 엔드로 데이터 저장 및 불러오는 로직 구현 )
-<img width="707" alt="Screen Shot 2022-03-26 at 4 12 35 PM" src="https://user-images.githubusercontent.com/88773996/160229105-cb30752a-4034-467b-b16e-0a5587606781.png">
-<img width="753" alt="Screen Shot 2022-03-26 at 4 13 52 PM" src="https://user-images.githubusercontent.com/88773996/160229145-5fd82ea9-2a75-4d15-8c1a-d1e313e352d4.png">
+<img src="https://user-images.githubusercontent.com/96604554/160230531-7e2162f4-8364-42fc-8cd1-290ae5399270.gif" width="945" />
 
 
 ### 장바구니
 - 체크 박스 기능 구현 ( props, state, set객체 활용 )
 - set객체에 있는 값들을 Array.from메서드를 활용해 배열로 변환해 백 엔드로 전송함.
-<img width="889" alt="Screen Shot 2022-03-26 at 4 20 34 PM" src="https://user-images.githubusercontent.com/88773996/160229341-5cb77427-013b-4f0a-a234-a77877f323d1.png">
+<img src="https://user-images.githubusercontent.com/96604554/160230537-0ecf37e5-09a1-4e87-b1c8-d046d4080dfd.gif" width="945" />
 
 
 ## 적용 기술
