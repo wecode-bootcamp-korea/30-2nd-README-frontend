@@ -39,8 +39,8 @@
 ### 로그인/회원가입
 - 카카오 소셜 로그인 구현
 - 로그인 시 토큰 값 localStorage에 저장
-<img width="578" alt="Screen Shot 2022-03-26 at 4 08 31 PM" src="https://user-images.githubusercontent.com/88773996/160228985-4ac2cb77-6772-46c1-9f02-b8f787aa042a.png">
-<img width="527" alt="Screen Shot 2022-03-26 at 4 10 25 PM" src="https://user-images.githubusercontent.com/88773996/160229036-d723cdca-bc42-4778-b91d-5030edb9faf8.png">
+<img src="https://user-images.githubusercontent.com/96604554/160229945-086f2ad6-4a24-46f4-9d78-ef7b64620e21.gif" width="350" />
+
 
 ### 메인
 - 카테고리별( 판타지, 로맨스 등 ) 필터링 기능 구현
