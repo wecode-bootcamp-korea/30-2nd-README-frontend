@@ -34,6 +34,22 @@
 8. 상세 페이지 - 정렬, 전권 구매, 선택 구매, 구매시 [구매버튼]이 [보기버튼]으로 바뀜
 9. 구매 페이지
 
+## 데모 사진
+### 로그인/회원가입
+- 카카오 소셜 로그인 구현
+- 로그인 시 토큰 값 localStorage에 저장
+<img width="578" alt="Screen Shot 2022-03-26 at 4 08 31 PM" src="https://user-images.githubusercontent.com/88773996/160228985-4ac2cb77-6772-46c1-9f02-b8f787aa042a.png">
+<img width="729" alt="Screen Shot 2022-03-26 at 4 09 02 PM" src="https://user-images.githubusercontent.com/88773996/160229002-b8b0b9bb-efb1-48c3-8d5e-9c9d652e761f.png">
+
+
+
+### 메인
+
+### 상세
+
+### 장바구니
+
+
 ## 적용 기술
 - Common<br>
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"><img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"><img src="https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white"><img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
